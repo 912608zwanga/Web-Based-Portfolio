@@ -22,7 +22,7 @@ body{
 
 }
 .container{
-    padding: 5px 5%;/*spacing:10px from top and 10% from left$ryt*/
+    padding: 5px 5%;/*spacing:5px from top and 5% from left */
 }
 
 nav{
@@ -35,10 +35,10 @@ nav{
 }
 
 .logo{
-   /* position:relative;*/
+   
     width: 140px;
 }
-/* Mobile Menu Button Styling */
+/* Mobile Menu Button */
 #open-menu, #close-menu {
     font-size: 24px;
     cursor: pointer;
@@ -46,8 +46,6 @@ nav{
 }
 nav ul {
     display: flex;
-    /*justify-content: center;
-    width: 100%;*/
     list-style: none;
 }
 
@@ -62,7 +60,7 @@ nav ul li a{
     color: #080808;
     text-decoration: none;
     font-size: 18px;
-  /*  position: relative;*/
+  
 }
 nav ul li a:hover {
     color: #00bfff;
@@ -101,15 +99,14 @@ nav ul li a:hover::after{
     font-size: 30px;
     font-weight: 700;
     margin-top: 15px;
-    /*max-width: 400px;*/
+    
 }
 .header-text h1 span{
 color:#00bfff;
 }
 .header-text h2{
     font-size: 15px;
-    /*margin-top: 15px;*/
-    /*max-width: 300px;*/
+ 
 }
 
 /*IMAGE STYLING*/
@@ -249,7 +246,7 @@ color:#00bfff;
     }
 }
 
-/*-- ---------about---------*/
+/*-- ---------ABOUT ME SECTION---------*/
 #about{
 
     background-color: #ffffff;
@@ -360,9 +357,9 @@ color:#00bfff;
     grid-template-rows: repeat(3,auto);
 }
 }
-/*------------portfolia---------------*/
+/*------------PROJECTS---------------*/
 #portfolio{
-    /*padding: 50px 0;*/
+   
     max-width: 1000px;
     padding: 2rem 3rem;
 
@@ -506,7 +503,7 @@ form btn2{
 .copyright i{
     color: #ff004f;
 }
-/*------------------css for small screen-------------------*/ 
+/*------------------CSS for small screen-------------------*/ 
 nav .fas{
     display: none;
 } 
