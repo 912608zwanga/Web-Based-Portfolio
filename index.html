@@ -1,0 +1,252 @@
+<!--OPEN HTML STRUCTURE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web-Based Portfolio</title> <!--WEBSITE TITLE-->
+    <link rel="stylesheet" href="style.css"><!--CONNECT HTML AND CSS FILES -->
+    <script src="https://kit.fontawesome.com/82e23383de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+   
+        <nav> <!--navigation bar to add some menu -->
+            <img src="Images/logo.png.jpg" class="logo"> 
+            <ul id="sidemenu"> 
+                <!--list of menus-->
+                <li><a href="#header">Homepage</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                <i class="fa-solid fa-square-xmark" id="close-menu" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" id="open-menu" onclick="openmenu()"></i>
+        </nav>
+
+    <div class="hero-content">
+       <div class="header-text">
+        <p>Goal-Orinted</p>
+        <h1>Hello, I'm <span>Mafune Zwanga</span><br>2nd Year Computer Science Student </h1>
+        <br> <!--ADD A LINE BREAK-->
+        <h2>Welcome to my page. Here's a collection of my work, from school projects to personal experience.
+            <br>I'm glad you're here <i class="fa-solid fa-heart"></i>.</h2>
+       </div>
+    </div>
+</div>
+  
+ <div class="header-img">
+    <div class="glowing-circle">
+       <div class="image">
+        <img src="Images/backgroundimage1.jpg" alt="profile"> 
+       </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<hr>
+   <!-- ---------about--------- -->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/backgroundimage1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Greetings!, My name is Zwanga, i'm currently pursuing a degree in Computer Science at university of Venda. My academic interest include data sructures, building apps and websites. I enjoy learning new things and using what i've learned to build real projects</p>
+
+                <div class="tab-titles">
+                
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('academic')">Academic</p>
+                    <p class="tab-links" onclick="opentab('career')">Career</p>
+                
+                </div>
+             
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+
+                        <li><span>Goal-Orinted</span><br>Basic programming knowledge in Java and C++</li>
+                        <li><span>Web Development</span><br>Understanding of web development concepts(HTML, CSS, JavaScript basics)</li>
+                        <li><span>Problem-Solving</span><br>Familiar with problem-solving techniques and logical thinking</li>
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="academic">
+                    <ul>
+                        <li><span>Current</span><br>Currently pursuing Bachelor's degree in Computer Science.</li>
+                        <li><span>Level one 2024</span><br>Gaining practical experience through coding assignments and small academic projects</li>
+                        <li><span>Foundational Studies</span><br>Studying foundational topics such as Databases, Operating Systems and Human Computer Interaction</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="career"> 
+                    <ul>
+                        <li><span>Software Development</span><br>To build strong expertise, including creating and managing APIs</li>
+                        <li><span>Developer</span><br>Designing Web/App interfaces</li>
+                        <li><span>Work from home</span><br>Web app Development</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+<!-------services--------->
+<h2>My Services</h2>
+<div class="work">
+    <div class="workbox">
+        <div class="icon">
+            <i class="fa-brands fa-app-store-ios"></i>
+        </div>
+        <div class="desc">
+            <h3>Database Design</h3>
+                <p>Setting up simple databases, writing SQL queries and helping organise data.</p>
+        </div>
+    </div>
+
+    <div class="workbox">
+        <div class="icon">
+            <i class="fa-solid fa-crop-simple"></i>
+        </div>
+        <div class="desc">
+            <h3>Basic Website Development</h3>
+                <p>Creating simple, responsive websites using HTML, CSS and JavaScript.</p>
+        </div>
+    </div>
+
+    <div class="workbox">
+        <div class="icon">
+            <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="desc">
+            <h3>Projects Assistance</h3>
+                <p>Helping other students and small businesses with simple tasks and academic projects.</p>
+        </div>
+    </div>
+</div>
+
+<br>
+<hr>
+<!-- ------------portfolio------------- -->
+ <br>
+ <hr>
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work1.jpg" >
+                <div class="layer">
+                    <h3>Monthly Home Loan Payments</h3>
+                    <p>The program implements the amortization formula to provide accurate monthly repayments.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work2.jpg" >
+                <div class="layer">
+                    <h3>To-Do List Application</h3>
+                    <p>The app allows user to add, edit and delete tasks</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work4.jpg" >
+                <div class="layer">
+                    <h3>Students Grading System</h3>
+                    <p>Created to manage student Grades, calculates average scores and generate grade reports</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+         <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+<br>
+<hr>
+ <!-- -------------Contact--------------- -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> zmafune@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> 079 978 1626</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/COM 2301 ASSIGNMENT 2025.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Username :" minlength="5" maximum="14" required>
+                <input type="email" name="Email" placeholder="Your Personal Email: username@gmail.com" required>
+                <textarea name="Message" rows ="7" placeholder="Your Message:"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @Mafune.Thank You<i class="fa-solid fa-heart"></i> ,and stay blessed <i class="fa-solid fa-hands-praying"></i></p>
+    </div>
+</div>
+
+   <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+   </script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5ep0ond-cvBJciHcHUb1v3BUyVAzDsKfmyJ3lVMUNvnpFi8bu8kiCJq0Hlni3YbuC/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
